@@ -6,8 +6,7 @@
 > Si tu teclado ha sido actualizado antes del 2025/08/22 es la versión mas reciente.
 
 ## Contacto
-
-Para archivos y modelos 3d o contacto este es la forma de contacto con el vendedor original，请联系380465425@qq.com
+Si necesitas los archivos del modelo para impresión 3D o tu teclado presenta cualquier anomalía o fallo, por favor contacta con: 请联系380465425@qq.com
 
 ## Mapa de teclas del Sofle
 
