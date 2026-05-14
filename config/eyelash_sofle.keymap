@@ -54,6 +54,17 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+         to_layer3 {
+            bindings = <&to 3>;
+            key-positions = <57 59>;
+        };
+
+         back_to_layer0 {
+            bindings = <&to 0>;
+            key-positions = <57 59>;  
+            layers = <3>;            
+        };
     };
 
     macros {
@@ -91,10 +102,10 @@
         layer_1 {
             bindings = <
 &kp ES_ORDM  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6               &kp F7           &kp F8         &kp F9        &kp F10           &kp F12
-&none       &none            &kp UP_ARROW     &none            &kp HOME         &kp PG_UP          &mmv MOVE_DOWN   &kp ES_CARET         &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL   &kp ES_LBKT       &kp ES_RBKT
-&none       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp END          &kp PG_DN          &mmv MOVE_LEFT   &kp ES_SINGLE_QUOTE  &kp ES_BSLH      &kp ES_STAR    &kp ES_MINUS  &kp ES_LBRC       &kp ES_RBRC
-&none       &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp ES_PLUS          &kp ES_UNDER     &kp ES_LT      &kp ES_GT     &kp ES_IQMARK     &kp ES_QMARK           
-&kp C_MUTE  &none            &none            &none            &none            &none              &mkp LCLK        &none                &none            &none          &none         &none
+&none       &none            &kp UP_ARROW     &none            &kp HOME         &kp PG_UP          &mmv MOVE_DOWN   &kp ES_CARET          &kp ES_PIPE      &kp ES_IEXCL   &kp ES_EXCL   &kp ES_LBKT       &kp ES_RBKT
+&none       &kp LEFT_ARROW   &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp END          &kp PG_DN          &mmv MOVE_LEFT   &kp ES_SINGLE_QUOTE   &kp ES_BSLH      &kp ES_STAR    &kp ES_MINUS  &kp ES_LBRC       &kp ES_RBRC
+&none       &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &kp ES_PLUS           &kp ES_UNDER     &kp ES_LT      &kp ES_GT     &kp ES_IQMARK     &kp ES_QMARK           
+&kp C_MUTE  &none            &none            &none            &none            &none              &mkp LCLK        &none                 &none            &none          &none         &none
             >;
             sensor-bindings = <&scroll_encoder>;
             display-name = "Funcion";
@@ -102,11 +113,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&none      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6          &kp F7            &kp F8       &kp F9       &kp F10      &none
+&none      &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none           &mmv MOVE_DOWN   &none           &none             &kp F11      &kp F12      &none        &none
+&none      &out OUT_USB  &out OUT_BLE    &none         &none         &none           &mmv MOVE_LEFT   &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT   &none        &none        &none
+&none      &sys_reset    &none           &bootloader   &none         &none           &mmv MOVE_RIGHT  &none           &none             &sys_reset   &soft_off    &bootloader  &none 
+&none      &trans        &none           &none         &none         &none           &mkp LCLK        &none           &none             &none        &none        &none
             >;
 
             display-name = "LAYER2";
@@ -115,11 +126,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&none  &out OUT_USB   &out OUT_BLE  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &sys_reset     &soft_off     &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none          &bootloader   &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none          &none         &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none          &none         &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             display-name = "LAYER3";
