@@ -330,6 +330,7 @@ combos:
   k: '&soft_off'
 - p: [57, 59]
   k: {t: Juegos, h: toggle}
+  l: [Escribir]
 - p: [57, 59]
   k: {t: Escribir, h: toggle}
   l: [Juegos]
