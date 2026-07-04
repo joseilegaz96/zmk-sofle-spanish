@@ -10,6 +10,17 @@ Si necesitas los archivos del modelo para impresión 3D o tu teclado presenta cu
 
 ## Mapa de teclas del Sofle
 
-<img width="1543" height="1019" alt="Layout" src="https://github.com/user-attachments/assets/ef5fa5cd-464f-4b3d-a6b5-1b79ab6e42dc" />
+
+<img width="1203" height="650" alt="imagen" src="https://github.com/user-attachments/assets/73940e5a-b67c-4287-93ad-3ba7e79b1011" />
+
+
+<img width="1303" height="659" alt="imagen" src="https://github.com/user-attachments/assets/e0e98cdc-b6f1-4074-9567-b63e571afb3c" />
+
+<img width="1333" height="670" alt="imagen" src="https://github.com/user-attachments/assets/4999e6ef-ad1c-48cc-b839-2441f876a089" />
+
+<img width="1196" height="638" alt="imagen" src="https://github.com/user-attachments/assets/9cd7cd18-2eef-40a3-be37-0f0e4eecd4c3" />
+
+
+
 
 
