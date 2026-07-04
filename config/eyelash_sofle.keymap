@@ -43,7 +43,7 @@
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
     
-        bindings = <&kp CAPSLOCK &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_COLOR_HSB(0,100,100)>;    
+        bindings = <&kp CAPSLOCK &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_COLOR_HSB(0,0,100)>;    
     };
 
         num_f: num_function {
