@@ -1,1 +1,4 @@
-
+config RGB_LAYER_TEST
+    bool "Enable RGB per-key layer highlight"
+    default y
+    depends on ZMK_RGB_UNDERGLOW
