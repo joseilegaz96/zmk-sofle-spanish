@@ -46,6 +46,9 @@
         bindings = <&kp CAPSLOCK &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_COLOR_HSB(0,0,100)>;    
     };
 
+
+
+        //Si presiono normal escribe 5, si mantengo actua como un f5
         num_f: num_function {
             compatible = "zmk,behavior-hold-tap";
             label = "NUM_FUNCTION";
