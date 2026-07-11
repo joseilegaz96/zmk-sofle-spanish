@@ -43,8 +43,8 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
-  - C
-  - V
+  - '&td_copy'
+  - '&td_paste'
   - B
   - $$mdi:arrow-right-bold$$
   - N
