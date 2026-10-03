@@ -256,7 +256,7 @@ layers:
   - Funcion
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Blueth
-  - $$mdi:keyboard-space$$
+  - INS
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:backspace-reverse-outline$$
